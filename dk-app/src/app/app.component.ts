@@ -9,6 +9,6 @@ export class AppComponent {
   title: string;
 
   constructor() {
-    this.title = 'Dawn Koehler Insurance Agency, LLC';
+    this.title = 'Dawn Koehler';
   }
 }
