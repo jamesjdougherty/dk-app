@@ -6,6 +6,14 @@
   <div style="text-align: center; padding: 25px;">
     <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
   </div>
+  <div style="padding: 1em; text-align: center;">
+    <input
+      type="text"
+      [value]="name"
+      (input)="handleInput($event)"
+      (blur)="handleBlur($event)"
+    >
+  </div>
   <div>
     <mat-card class="divider">
       <mat-card-title>
