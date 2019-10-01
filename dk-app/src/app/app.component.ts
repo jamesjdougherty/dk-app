@@ -7,18 +7,38 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string;
-  name = 'Customer1';
+  firstName = 'First Name';
+  lastName = 'Last Name';
+  phoneNumber = 'Phone';
+  email = 'Email';
+  customerMessage = 'Message';
 
   constructor() {
     this.title = 'Dawn Koehler';
   }
 
-  handleInput = (event: any) => {
-    this.name = event.target.value;
+  handleFirstName = (event: any) => {
+    this.firstName = event.target.value;
+  }
+
+  handleLastName = (event: any) => {
+    this.lastName = event.target.value;
+  }
+
+  handlePhoneNumber = (event: any) => {
+    this.phoneNumber = event.target.value;
+  }
+
+  handleEmail = (event: any) => {
+    this.email = event.target.value;
+  }
+
+  handleCustomerMessage = (event: any) => {
+    this.customerMessage = event.target.value;
   }
 
   handleBlur = (event: any) => {
-    this.name = event.target.value;
+    this.firstName = event.target.value;
     console.log(event);
   }
 }

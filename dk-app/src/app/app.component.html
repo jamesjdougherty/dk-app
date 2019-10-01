@@ -3,17 +3,17 @@
     {{ title }}
   </h1>
   <h3>Insurance Agency, LLC</h3>
-  <div style="text-align: center; padding: 25px;">
+  <table style="width: 100%;">
+  <th style="text-align: center; padding: 25px;">
     <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
-  </div>
-  <div style="padding: 1em; text-align: center;">
-    <input
-      type="text"
-      [value]="name"
-      (input)="handleInput($event)"
-      (blur)="handleBlur($event)"
-    >
-  </div>
+  </th>
+  <th style="text-align: center; padding: 25px;">
+    <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
+  </th>
+  <th style="text-align: center; padding: 25px;">
+    <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
+  </th>
+  </table>
   <div>
     <mat-card class="divider">
       <mat-card-title>
@@ -98,6 +98,43 @@
       </mat-card-content>
     </mat-card>
   </div>
+
+  <div style="padding: 1em; text-align: left;">
+    <input
+      type="text"
+      [value]="firstName"
+      (input)="handleFirstName($event)"
+    >
+  </div>
+  <div style="padding: 1em; text-align: left;">
+    <input
+      type="text"
+      [value]="lastName"
+      (input)="handleLastName($event)"
+    >
+  </div>
+  <div style="padding: 1em; text-align: left;">
+    <input
+      type="text"
+      [value]="phoneNumber"
+      (input)="handlePhoneNumber($event)"
+    >
+  </div>
+  <div style="padding: 1em; text-align: left;">
+    <input
+      type="text"
+      [value]="email"
+      (input)="handleEmail($event)"
+    >
+  </div>
+  <div style="padding: 1em; text-align: left;">
+    <textarea
+      type="text"
+      [value]="customerMessage"
+      (input)="handleCustomerMessage($event)"
+    ></textarea>
+  </div>
+
   <footer class="divider">
     <h5>Contact Us</h5>
     <h6>240 Main Street, Great Bend, PA 18821</h6>
