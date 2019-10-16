@@ -6,3 +6,22 @@
 .divider {
   border-top: 2px black solid;
 }
+
+.topnav {
+  margin: auto 0;
+}
+
+.topnav a {
+  padding: 10px 15px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 17px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topnav a.icon {
+  color: #000;
+  display: inline-block;
+  font-size: 25px;
+}

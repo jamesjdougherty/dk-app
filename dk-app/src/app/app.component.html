@@ -3,17 +3,28 @@
     {{ title }}
   </h1>
   <h3>Insurance Agency, LLC</h3>
+
+  <div class="topnav" style="float: right;">
+    <div id="myLinks">
+      <a href="./app.component.html">Home</a>
+      <a href="./services/services.component.html">Our Services</a>
+      <a href="./quotes/quotes.component.html">Get A Quote</a>
+      <a href="./contact/contact.component.html">Contact Us</a>
+    </div>
+  </div>
+
   <table style="width: 100%;">
-  <th style="text-align: center; padding: 25px;">
-    <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
-  </th>
-  <th style="text-align: center; padding: 25px;">
-    <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
-  </th>
-  <th style="text-align: center; padding: 25px;">
-    <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
-  </th>
+    <th style="text-align: center; padding: 25px;">
+      <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
+    </th>
+    <th style="text-align: center; padding: 25px;">
+      <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
+    </th>
+    <th style="text-align: center; padding: 25px;">
+      <img src="../assets/office-front.PNG" alt="DK Office Entrance" />
+    </th>
   </table>
+
   <div>
     <mat-card class="divider">
       <mat-card-title>
@@ -48,8 +59,10 @@
       </mat-card-title>
       <mat-card-content>
         <aside>
-          <i>An independent agent can provide service big companies simply
-            cannot</i>
+          <i
+            >An independent agent can provide service big companies simply
+            cannot</i
+          >
         </aside>
         <p>
           Having an insurance company treat you like a number can be
@@ -92,42 +105,32 @@
           </li>
         </ul>
         <aside>
-          <i>Call today to speak with an independent insurance agent about the
-            insurance policies that are right for you.</i>
+          <i
+            >Call today to speak with an independent insurance agent about the
+            insurance policies that are right for you.</i
+          >
         </aside>
       </mat-card-content>
     </mat-card>
   </div>
 
-  <div style="padding: 1em; text-align: left;">
-    <input
-      type="text"
-      [value]="firstName"
-      (input)="handleFirstName($event)"
-    >
+  <div style="padding: .5em; text-align: left;">
+    <input type="text" [value]="firstName" (input)="handleFirstName($event)" />
   </div>
-  <div style="padding: 1em; text-align: left;">
-    <input
-      type="text"
-      [value]="lastName"
-      (input)="handleLastName($event)"
-    >
+  <div style="padding: .5em; text-align: left;">
+    <input type="text" [value]="lastName" (input)="handleLastName($event)" />
   </div>
-  <div style="padding: 1em; text-align: left;">
+  <div style="padding: .5em; text-align: left;">
     <input
       type="text"
       [value]="phoneNumber"
       (input)="handlePhoneNumber($event)"
-    >
+    />
   </div>
-  <div style="padding: 1em; text-align: left;">
-    <input
-      type="text"
-      [value]="email"
-      (input)="handleEmail($event)"
-    >
+  <div style="padding: .5em; text-align: left;">
+    <input type="text" [value]="email" (input)="handleEmail($event)" />
   </div>
-  <div style="padding: 1em; text-align: left;">
+  <div style="padding: .5em; text-align: left;">
     <textarea
       type="text"
       [value]="customerMessage"
